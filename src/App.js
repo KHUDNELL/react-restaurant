@@ -9,9 +9,9 @@ function App() {
   return (
     <>
      <h1>Current emotion is {emotion}.</h1>
-     <button onClick={()=>setEmotion('happy')}>happy</button>
+     <button onClick={()=>setEmotion('happy')}>Make Happy</button>
      <button onClick={()=>setEmotion('frustrated')}>Frustrate</button>
-     <button onClick={()=>setEmotion('enthusiastic')}>enthusiastic</button>
+     <button onClick={()=>setEmotion('enthusiastic')}>Enthusiastic</button>
     </>
   )
  
