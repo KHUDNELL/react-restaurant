@@ -1,5 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+
+import {
+  Home,
+  About,
+  Events,
+  Contact
+} from "./pages";
 
 // https://api.github.com/users/khudnell
 
@@ -7,8 +15,15 @@ import './App.css';
 function App() {
  
   
-    return (<div><h1>Hello react testing</h1></div>)
-   
+    return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />}/>
+        <Route path="/events" element={<Events />}/>
+        <Route path="/contact" element={<Contact />}/>
+      </Routes>
+   </div>);
 
  
   
