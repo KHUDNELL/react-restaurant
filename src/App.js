@@ -6,7 +6,8 @@ import {
   Home,
   About,
   Events,
-  Contact
+  Contact,
+  Whoops404
 } from "./pages";
 
 // https://api.github.com/users/khudnell
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<About />}/>
         <Route path="/events" element={<Events />}/>
         <Route path="/contact" element={<Contact />}/>
+        <Route path="*" element={<Whoops404 />}/>
       </Routes>
    </div>);
 
